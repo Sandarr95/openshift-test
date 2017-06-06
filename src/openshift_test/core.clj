@@ -16,6 +16,6 @@
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
-  (let [echo-token (Sys/getenv "TELEGRAM_BOT_TOKEN")]
+  (let [echo-token (System/getenv "TELEGRAM_BOT_TOKEN")]
     (bot/start echo-token (telegram-echoer echo-token))
     (http/start-server handler {:port 8080})))
