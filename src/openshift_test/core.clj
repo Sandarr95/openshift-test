@@ -1,5 +1,5 @@
 (ns openshift-test.core
-  (:require ;[aleph.http :as http]
+  (:require [aleph.http :as http]
             [morse.api :as telegram]
             [morse.polling :as bot])
   (:gen-class))
@@ -18,5 +18,4 @@
   [& args]
   (let [echo-token (System/getenv "TELEGRAM_BOT_TOKEN")]
     (bot/start echo-token (telegram-echoer echo-token))
-    ;(http/start-server handler {:port 8080})
-))
+    (http/start-server handler {:port 8080})))
