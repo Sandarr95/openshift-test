@@ -18,4 +18,5 @@
   [& args]
   (let [echo-token (System/getenv "TELEGRAM_BOT_TOKEN")]
     (bot/start echo-token (telegram-echoer echo-token))
-    (http/start-server handler {:port 8080})))
+    (http/start-server handler {:port 8080})
+    (while true)))
