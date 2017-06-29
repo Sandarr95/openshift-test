@@ -1,5 +1,5 @@
 (ns openshift-test.core
-  (:require [morse.api :as t])
+  (:require [clojure.core.async :refer [chan go go-loop thread >! <! close! alts!]])
   (:gen-class))
 
 (defn -main
