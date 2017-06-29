@@ -7,5 +7,5 @@
   "I don't do a whole lot ... yet."
   [& args]
   (let [echo-token (System/getenv "TELEGRAM_BOT_TOKEN")]
-  (bot/start echo-token println)
+  ;(bot/start echo-token println)
   (println "Program runs")))
