@@ -1,4 +1,5 @@
 (ns openshift-test.core
+  (:require [morse.api :as t])
   (:gen-class))
 
 (defn -main
