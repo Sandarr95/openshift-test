@@ -7,9 +7,6 @@
                  [org.clojure/tools.macro "0.1.5"]
                  [org.clojure/core.async "0.2.374"]
                  [org.clojure/tools.logging "0.3.1"]
-                 [clj-stacktrace "0.2.8"]
-                 [cheshire "5.5.0"]
-                 [clj-http "2.1.0"]
                  [aleph "0.4.3"]]
   :main ^:skip-aot openshift-test.core
   :target-path "target/%s"
