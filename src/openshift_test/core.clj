@@ -1,4 +1,5 @@
 (ns openshift-test.core
+  (:require [core.async :as a])
   (:gen-class))
 
 (defn -main
