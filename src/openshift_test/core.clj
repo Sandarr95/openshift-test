@@ -1,5 +1,4 @@
 (ns openshift-test.core
-  (:require [clojure.core.async :refer [chan go go-loop thread >! <! close! alts!]])
   (:gen-class))
 
 (defn -main
