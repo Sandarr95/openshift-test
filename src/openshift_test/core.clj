@@ -1,4 +1,5 @@
 (ns openshift-test.core
+  (:require [clojure.core.async :as a])
   (:gen-class))
 
 (defn -main
